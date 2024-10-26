@@ -3,37 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <title>Lyceum-KFU</title>
+  <link rel="stylesheet" href="bootstrap/css/base.css">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <script src='bootstrap/js/bootstrap.js'></script>
   <link rel="icon" type="image" href='img/favicon.png'/>
 </head>
 <body>
+<style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 20px;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+
+</style>
 <header>
   <p align="center"><a href="https://Lyceum-KFU.github.io"><img width="80%" alt="Hello, I'm Lyceum-KFU."
-                                                            src="img/hello.png"/></a></p>
+                                                                src="img/hello.png"/></a></p>
 </header>
 <main>
   <br/>
   <div class="container">
-    <b>We're a backend and software developers</b>
+    <b>We're a backend, frontend, telebot and software developers</b>
     <br>
     <br>
     <h3>About us</h3>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item"><p>A students from Russia</p></li>
-      <li class="list-group-item"><p>Graduated from two courses at Yandex Lyceum</p></li>
+      <li class="list-group-item"><p>Schoolchildren from Russia, Kazan</p></li>
+      <li class="list-group-item"><p>6 years in programming</p></li>
     </ul>
+    <div class="skill-section">
+      <h1 class="heading" style="color:black">skills</h1>
+      <div class="skills-container">
+        <div class="skill-card">
+          <img src="img/html.png" class="skill-img" alt="">
+          <div class="skill-level">98%</div>
+          <h1 class="skill-name" style="color:black">HTML</h1>
+          <p class="skill-info" style="color:black">Static sites</p>
+        </div>
+        <div class="skill-card">
+          <img src="img/django.png" class="skill-img" alt="">
+          <div class="skill-level">98%</div>
+          <h1 class="skill-name" style="color:black">Django</h1>
+          <p class="skill-info" style="color:black">Professional websites</p>
+        </div>
+        <div class="skill-card">
+          <img src="img/pygame.png" class="skill-img" alt="">
+          <div class="skill-level">98%</div>
+          <h1 class="skill-name" style="color:black">Pygame</h1>
+          <p class="skill-info" style="color:black">Games of different genres</p>
+        </div>
+        <div class="skill-card">
+          <img src="img/c.png" class="skill-img" alt="">
+          <div class="skill-level">98%</div>
+          <h1 class="skill-name" style="color:black">c#</h1>
+          <p class="skill-info" style="color:black">Development of desktop applications on WPF</p>
+        </div>
+        <div class="skill-card">
+          <img src="img/sql.png" class="skill-img" alt="">
+          <div class="skill-level">98%</div>
+          <h1 class="skill-name" style="color:black">SQL</h1>
+          <p class="skill-info" style="color:black">Database development in MS Server or SQLite: Rest api</p>
+        </div>
+        <div class="skill-card">
+          <img src="img/telebot.png" class="skill-img" alt="">
+          <div class="skill-level">98%</div>
+          <h1 class="skill-name" style="color:black">Telebot</h1>
+          <p class="skill-info" style="color:black">Development of telegram bots with different functionality in python</p>
+        </div>
+      </div>
 
-    <h3>Our skills</h3>
-
-    </br>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item"><p>Development in Python Django, Flask, pygame, telebot</p></li>
-      <li class="list-group-item"><p>C# Visual Studio WPF</p></li>
-      <li class="list-group-item"><p>SQL MS server, SQLite</p></li>
-    </ul>
+      <div class="timeline">
+        <h1 class="heading" style="color:black">Our history</h1>
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title">2000-2002</h1>
+            <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title">2000-2002</h1>
+            <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title">2000-2002</h1>
+            <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title">2000-2002</h1>
+            <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title">2000-2002</h1>
+            <p class="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <div>
+    <button onclick="darkMode()">Darkmode</button>
+  </div>
+  <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+
+  </script>
 </main>
 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
   <div class="col-md-4 d-flex align-items-center">
